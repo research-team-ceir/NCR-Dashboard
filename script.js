@@ -21,8 +21,9 @@ var svg = d3.select("#ncr-dash")
     .attr("viewBox", "0 0 675 550");
 
 var ncrViz = svg.append("g")
-    .attr("id", "ncr-viz")
+    .attr("id", "ncr-viz");
 
+// text under map
 var ncrText = d3.select("#ncr-dash")
     .append("div")
     .attr("id", "ncr-text")
@@ -31,21 +32,19 @@ var ncrText = d3.select("#ncr-dash")
 var ncrHeader = ncrText.append("div")
     .style("display", "flex")
     .style("align-items", "center")
-    .style("column-gap", "20px")
+    .style("column-gap", "20px");
 
-var stateHeader = ncrHeader.append("h2").attr("id", "state-header")
+var stateHeader = ncrHeader.append("h2").attr("id", "state-header");
 
-var activeTag = ncrHeader.append("p")
+var saveTag = ncrHeader.append("p") // tag that highlights that a state uses SAVE
     .style("border-radius", "10px")
-    .style("background-color", "#bebebe")
+    .style("background-color", "#efc55b")
     .style("padding", "7px")
     .style("display", "none");
 
-var saveTag = ncrHeader.append("p")
-    .style("border-radius", "10px")
-    .style("background-color", "#bebebe")
-    .style("padding", "7px")
-    .style("display", "none");
+var ncrProfile = ncrText.append("div")
+    .attr("id", "ncr-profile")
+    .style("margin-bottom", "20px");
 
 var ncrSum = ncrText.append("div")
     .attr("id", "ncr-sum")
@@ -55,14 +54,16 @@ var ncrSum = ncrText.append("div")
     .style("grid-template-columns", "auto auto auto")
     .style("margin-bottom", "50px");
 
-var bodyWidth = document.getElementsByTagName("body")[0].getBoundingClientRect().width;
+
+var bodyWidth = document.getElementsByTagName("body")[0].getBoundingClientRect().width; // used to center objects in svg
 
 // #endregion
 
 Promise.all([
     d3.json("data/tile_map.json"),
-    d3.dsv("|", "data/summaries.csv")
-]).then(function([tileMap, ncrData]) {
+    d3.dsv("|", "data/summaries.csv"),
+    d3.dsv("|", "data/profiles.csv")
+]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
 
     var found;
@@ -75,13 +76,24 @@ Promise.all([
         var tileState = tileMap.states[i].name;
         found = false;
 
+        // loop through profiles
+        for (var j = 0; j < profiles.length; j++) {
+            var profileState = profiles[j].state;
+
+            if (tileState == profileState) {
+                tileMap.states[i].profile = profiles[j].profile;
+                tileMap.states[i].save = profiles[j].save;
+            };
+        };
+
+        // loop through summaries
         for (var j = 0; j < ncrData.length; j++) {
             var ncrState = ncrData[j].state;
 
             // reset currSums
             if (tileState != ncrState) {
                 currSums = [];
-            }
+            };
 
             if (tileState == ncrState) {
                 // add summaries
@@ -90,11 +102,8 @@ Promise.all([
                 currSums.push(currSum);
                 tileMap.states[i].summaries = currSums;
 
-                // add active reg count, save boolean, and ncr boolean
-                tileMap.states[i].active_reg = ncrData[j].active_reg;
-                tileMap.states[i].save = ncrData[j].save;
+                // boolean for whether or not a state has a NCR summary
                 tileMap.states[i].value = 1;
-
                 found = true;
             };
         };
@@ -102,13 +111,11 @@ Promise.all([
         if (found == false) {
             tileMap.states[i].summaries = nullSum;
             tileMap.states[i].value = 0;
-            tileMap.states[i].active_reg = "NA";
             tileMap.states[i].save = "NA";
         };
 
     };
 
-    console.log(tileMap)
     // #endregion
 
     // #region MAP SETUP
@@ -117,7 +124,7 @@ Promise.all([
         .range(["#bebebe", "#9a53b7"]);
 
     var mapContainer = ncrViz.append("g")
-        .attr("id", "map-container")
+        .attr("id", "map-container");
 
     // scale variable
     var mapSize = 8;
@@ -164,26 +171,18 @@ Promise.all([
     // #region UPDATE TEXT
     var updateText = function(e, d) {
         stateHeader.text(d.name);
-
-        // update active tag
-        if (d.active_reg != "NA") {
-            activeTag
-                .style("display", "block")
-                .text(d.active_reg)
-        } else {
-            activeTag
-                .style("display", "none")
-        }
+        ncrProfile.text(d.profile);
 
         // update save tag
         if (d.save == "Y") {
             saveTag
                 .style("display", "block")
-                .text("MOU to use SAVE")
+                .text("MOU to use SAVE");
+
         } else {
             saveTag
-                .style("display", "none")
-        }
+                .style("display", "none");
+        };
 
         ncrSum.selectAll("*").remove();
 
@@ -205,8 +204,10 @@ Promise.all([
             }
 
             if (!dates.includes(d.summaries[i].date)) {
+                // group summaries by date
                 dates.push(d.summaries[i].date);
 
+                // summaries
                 ncrSum
                     .append("div")
                     .append("p")
@@ -214,6 +215,7 @@ Promise.all([
                     .style("margin-top", "0")
                     .style("text-align", "right");
 
+                // circle and vertical line that make the "timeline" visual
                 currTimeline = ncrSum
                     .append("div")
                     .style("display", "flex")
@@ -239,27 +241,28 @@ Promise.all([
                     .style("margin-left", "auto")
                     .style("margin-right", "auto");
 
-                currSum = ncrSum.append("div")
+                currSum = ncrSum.append("div");
 
                 currSum
                     .append("p")
                     .text(d.summaries[i].summary)
                     .attr("id", d.name + "-" + i)
-                    .style("margin-top", "0")
+                    .style("margin-top", "0");
 
             } else {
                 currSum
                     .append("p")
                     .text(d.summaries[i].summary)
-                    .attr("id", d.name + "-" + i)
+                    .attr("id", d.name + "-" + i);
             }
 
-        var currP = document.getElementById(d.name + "-" + i)
+        // add link to text
+        var currP = document.getElementById(d.name + "-" + i);
         currP.innerHTML = currP.innerHTML.replace(d.summaries[i].link_text, "<a href='" + d.summaries[i].link + "' target='_blank'>" + d.summaries[i].link_text + "</a>");
         
     };
             
-        const header = document.getElementById("state-header")
+        const header = document.getElementById("state-header");
 
         header.scrollIntoView({
             behavior: "smooth"
@@ -267,7 +270,7 @@ Promise.all([
     };
 
     map
-        .on("click", updateText)
+        .on("click", updateText);
 
     // #endregion
 
