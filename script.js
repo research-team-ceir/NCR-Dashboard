@@ -1,4 +1,10 @@
 // #region SETUP
+function center(selection, y) {
+    var width = selection.node().getBBox().width;
+    var x = selection.node().getBBox().x;
+    selection.attr("transform", "translate(" + ((666-width)/2 - x) + "," + y + ")");
+};
+
 d3.select("body")
     .append("div")
     .attr("id", "ncr-dash")
@@ -18,7 +24,7 @@ d3.select("#ncr-dash")
 var svg = d3.select("#ncr-dash")
     .append("svg")
     .attr("width", "100%")
-    .attr("viewBox", "0 0 675 550");
+    .attr("viewBox", "0 0 666 550");
 
 var ncrViz = svg.append("g")
     .attr("id", "ncr-viz");
@@ -36,7 +42,8 @@ var ncrHeader = ncrText.append("div")
 
 var stateHeader = ncrHeader.append("h2").attr("id", "state-header");
 
-var saveTag = ncrHeader.append("p") // tag that highlights that a state uses SAVE
+// tag that highlights that a state uses SAVE
+var saveTag = ncrHeader.append("p") 
     .style("border-radius", "10px")
     .style("background-color", "#efc55b")
     .style("padding", "7px")
@@ -53,9 +60,6 @@ var ncrSum = ncrText.append("div")
     .style("display", "grid")
     .style("grid-template-columns", "auto auto auto")
     .style("margin-bottom", "50px");
-
-
-var bodyWidth = document.getElementsByTagName("body")[0].getBoundingClientRect().width; // used to center objects in svg
 
 // #endregion
 
@@ -93,9 +97,7 @@ Promise.all([
             // reset currSums
             if (tileState != ncrState) {
                 currSums = [];
-            };
-
-            if (tileState == ncrState) {
+            } else if (tileState == ncrState) {
                 // add summaries
                 currSum = {date: ncrData[j].date, summary: ncrData[j].summary,
                     link: ncrData[j].link, link_text: ncrData[j].link_text};
@@ -161,9 +163,7 @@ Promise.all([
             .style("font-family", "'Source Serif 4', sans-serif");;
 
     // center map
-    var mapWidth = mapContainer.node().getBoundingClientRect().width;
-    var mapx = mapContainer.node().getBoundingClientRect().x;
-    mapContainer.attr("transform", "translate(" + ((666-mapWidth) / 2 - (mapx-((bodyWidth-666)/2))) + ", 0)");
+    mapContainer.call(center, 0);
 
     // #endregion
 
@@ -187,8 +187,6 @@ Promise.all([
         ncrSum.selectAll("*").remove();
 
         var dates = [];
-        var currSum;
-        var currTimeline;
 
         for (var i = 0; i < d.summaries.length; i++) {
 
@@ -200,29 +198,49 @@ Promise.all([
                     .text(d.summaries[i].summary)
                     .style("margin-top", "0");
 
-                break;
-            }
+                ncrProfile.style("display", "none");
 
+                break;
+            } else {
+                ncrProfile.style("display", "block");
+            }
+    
+            // adding summaries
             if (!dates.includes(d.summaries[i].date)) {
                 // group summaries by date
                 dates.push(d.summaries[i].date);
 
-                // summaries
+                // date
                 ncrSum
                     .append("div")
                     .append("p")
                     .text(d.summaries[i].date)
-                    .style("margin-top", "0")
+                    .style("margin-top", 0)
                     .style("text-align", "right");
 
                 // circle and vertical line that make the "timeline" visual
-                currTimeline = ncrSum
+                var currTimeline = ncrSum
                     .append("div")
                     .style("display", "flex")
                     .style("flex-direction", "column")
                     .style("margin-left", "10px")
                     .style("margin-right", "10px");
-                    
+
+                // weird work around to get the circles to align with the date
+                if (i == 0) {
+                    currTimeline
+                        .append("div")
+                        .style("margin-top", "6px");
+                } else {
+                    currTimeline
+                        .append("div")
+                        .style("width", "3px")
+                        .style("height", "6px")
+                        .style("background-color", "#bebebe")
+                        .style("margin-left", "auto")
+                        .style("margin-right", "auto");
+                }
+
                 // circle
                 currTimeline
                     .append("div")
@@ -233,7 +251,7 @@ Promise.all([
                     .style("flex", "none");
 
                 // rectangle
-                currTimeline
+                var rect = currTimeline
                     .append("div")
                     .style("width", "3px")
                     .style("height", "100%")
@@ -241,30 +259,38 @@ Promise.all([
                     .style("margin-left", "auto")
                     .style("margin-right", "auto");
 
-                currSum = ncrSum.append("div");
+                // summary
+                var currSum = ncrSum.append("div");
+                var sums = d.summaries[i].summary.split("||");
 
-                currSum
-                    .append("p")
-                    .text(d.summaries[i].summary)
-                    .attr("id", d.name + "-" + i)
-                    .style("margin-top", "0");
+                for (j = 0; j < sums.length; j++) {
+                    currSum
+                        .append("p")
+                        .text(sums[j])
+                        .attr("id", d.name + "-" + i)
+                        .style("margin-top", 0);
+                };
 
+            // if there is no summary add the default text
             } else {
                 currSum
                     .append("p")
                     .text(d.summaries[i].summary)
                     .attr("id", d.name + "-" + i);
-            }
+            };
 
         // add link to text
         var currP = document.getElementById(d.name + "-" + i);
-        currP.innerHTML = currP.innerHTML.replace(d.summaries[i].link_text, "<a href='" + d.summaries[i].link + "' target='_blank'>" + d.summaries[i].link_text + "</a>");
+        var currLinks = d.summaries[i].link.split("||");
+        var currLinkTexts = d.summaries[i].link_text.split("||");
+
+        for (var j = 0; j < currLinks.length; j++) {
+            currP.innerHTML = currP.innerHTML.replace(currLinkTexts[j], "<a href='" + currLinks[j] + "' target='_blank'>" + currLinkTexts[j] + "</a>");
+        };
         
     };
             
-        const header = document.getElementById("state-header");
-
-        header.scrollIntoView({
+        document.getElementById("state-header").scrollIntoView({
             behavior: "smooth"
         });
     };
