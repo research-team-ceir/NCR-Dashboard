@@ -1,4 +1,52 @@
-state|save|profile
-Idaho|N|Idaho has 4.5 million active registered voters. Taken at face value, the largest claim documented would be roughly 0.00028% of active registered voters.
-Georgia|Y|There are 7.9 million active registered voters in Georgia. Taken at face value, the largest claim documented would be less than one-tenth of one percent of active registered voters.
-Oregon|Y|There are 6.8 million active registered voters in Oregon. Taken at face value, the largest claim documented would be less than one-tenth of one percent of active registered voters.
+state|profile|save|active_reg|rounded_reg|truncated_reg|largest claim
+Alabama|There are about 3.4 million registered voters in Alabama. Taken at face value, the largest claim documented would be roughly 0% of active registered voters.|Y|3492761|3,400,000|3.4 million|
+Alaska|There are about 6 hundred thousand registered voters in Alaska. Taken at face value, the largest claim documented would be roughly 0.0902% of active registered voters.|N|611939|600,000|6 hundred thousand|541
+Arizona|There are about 4.3 million registered voters in Arizona. Taken at face value, the largest claim documented would be roughly 0.0257% of active registered voters.|Y|4367593|4,300,000|4.3 million|1106
+Arkansas|There are about 1.3 million registered voters in Arkansas. Taken at face value, the largest claim documented would be roughly 0.0185% of active registered voters.|Y|1351552|1,300,000|1.3 million|240
+California|There are about 22.5 million registered voters in California. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|N|22595659|22,500,000|22.5 million|17
+Colorado||Y|4027412|4,000,000|4 million|
+Connecticut|There are about 2.3 million registered voters in Connecticut. Taken at face value, the largest claim documented would be roughly 0% of active registered voters.|N|2303767|2,300,000|2.3 million|1
+Delaware||N|744440|700,000|7 hundred thousand|
+District of Columbia|There are about 4 hundred thousand registered voters in District of Columbia.|N|476860|400,000|4 hundred thousand|
+Florida|There are about 14.1 million registered voters in Florida. Taken at face value, the largest claim documented would be roughly 0.001% of active registered voters.|Y|14178052|14,100,000|14.1 million|144
+Georgia|There are about 7.2 million registered voters in Georgia. Taken at face value, the largest claim documented would be roughly 0.0314% of active registered voters.|Y|7243511|7,200,000|7.2 million|2258
+Hawaii||N|776407|700,000|7 hundred thousand|
+Idaho|There are about 1 million registered voters in Idaho. Taken at face value, the largest claim documented would be roughly 0.0036% of active registered voters.|Y|1069711|1,000,000|1 million|36
+Illinois|There are about 8.1 million registered voters in Illinois. Taken at face value, the largest claim documented would be roughly 0.0067% of active registered voters.|N|8161709|8,100,000|8.1 million|545
+Indiana|There are about 4.2 million registered voters in Indiana. Taken at face value, the largest claim documented would be roughly 0.0039% of active registered voters.|Y|4288190|4,200,000|4.2 million|165
+Iowa|There are about 1.7 million registered voters in Iowa. Taken at face value, the largest claim documented would be roughly 0.128% of active registered voters.|Y|1792958|1,700,000|1.7 million|2176
+Kansas|There are about 1.8 million registered voters in Kansas. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|Y|1871857|1,800,000|1.8 million|1
+Kentucky||N|3219361|3,200,000|3.2 million|
+Louisiana|There are about 2.7 million registered voters in Louisiana. Taken at face value, the largest claim documented would be roughly 0.0144% of active registered voters.|Y|2733169|2,700,000|2.7 million|390
+Maine|There are about 1 million registered voters in Maine. Taken at face value, the largest claim documented would be roughly 0.001% of active registered voters.|N|1037570|1,000,000|1 million|10
+Maryland|There are about 4.3 million registered voters in Maryland. Taken at face value, the largest claim documented would be roughly 0% of active registered voters.|N|4313835|4,300,000|4.3 million|1
+Massachusetts|There are about 4.3 million registered voters in Massachusetts. Taken at face value, the largest claim documented would be roughly 0.0016% of active registered voters.|N|4369280|4,300,000|4.3 million|70
+Michigan|There are about 7.3 million registered voters in Michigan. Taken at face value, the largest claim documented would be roughly 0.0002% of active registered voters.|Y|7310804|7,300,000|7.3 million|15
+Minnesota|There are about 3.8 million registered voters in Minnesota. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|N|3816733|3,800,000|3.8 million|3
+Mississippi||Y|1980751|1,900,000|1.9 million|
+Missouri|There are about 3.9 million registered voters in Missouri. Taken at face value, the largest claim documented would be roughly 0% of active registered voters.|Y|3975289|3,900,000|3.9 million|1
+Montana|There are about 6 hundred thousand registered voters in Montana. Taken at face value, the largest claim documented would be roughly 0.0003% of active registered voters.|Y|691534|600,000|6 hundred thousand|2
+Nebraska||Y|1190813|1,100,000|1.1 million|
+Nevada|There are about 2 million registered voters in Nevada. Taken at face value, the largest claim documented would be roughly 0% of active registered voters.|N|2099468|2,000,000|2 million|
+New Hampshire|There are about 1 million registered voters in New Hampshire. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|N|1013075|1,000,000|1 million|1
+New Jersey||N|6082667|6,000,000|6 million|
+New Mexico||N|1254851|1,200,000|1.2 million|
+New York||N|12426602|12,400,000|12.4 million|
+North Carolina|There are about 7 million registered voters in North Carolina. Taken at face value, the largest claim documented would be roughly 0.0006% of active registered voters.|Y|7061219|7,000,000|7 million|41
+North Dakota||Y|371975|300,000|3 hundred thousand|
+Ohio|There are about 6.5 million registered voters in Ohio. Taken at face value, the largest claim documented would be roughly 0.0167% of active registered voters.|Y|6561950|6,500,000|6.5 million|1084
+Oklahoma|There are about 2 million registered voters in Oklahoma. Taken at face value, the largest claim documented would be roughly 0.0003% of active registered voters.|N|2095952|2,000,000|2 million|5
+Oregon|There are about 3 million registered voters in Oregon. Taken at face value, the largest claim documented would be roughly 0.042% of active registered voters.|N|3084789|3,000,000|3 million|1259
+Pennsylvania|There are about 8.4 million registered voters in Pennsylvania. Taken at face value, the largest claim documented would be roughly 1.1905% of active registered voters.|N|8429909|8,400,000|8.4 million|100000
+Rhode Island||N|732308|700,000|7 hundred thousand|
+South Carolina|There are about 3.4 million registered voters in South Carolina. Taken at face value, the largest claim documented would be roughly 0.0002% of active registered voters.|Y|3442256|3,400,000|3.4 million|6
+South Dakota|There are about 6 hundred thousand registered voters in South Dakota. Taken at face value, the largest claim documented would be roughly 0.0455% of active registered voters.|N|624164|600,000|6 hundred thousand|273
+Tennessee|There are about 4.4 million registered voters in Tennessee. Taken at face value, the largest claim documented would be roughly 0.001% of active registered voters.|Y|4489570|4,400,000|4.4 million|42
+Texas|There are about 16.6 million registered voters in Texas. Taken at face value, the largest claim documented would be roughly 0.0707% of active registered voters.|Y|16611078|16,600,000|16.6 million|11737
+Utah|There are about 1.8 million registered voters in Utah. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|Y|1839853|1,800,000|1.8 million|2
+Vermont||N|462244|400,000|4 hundred thousand|
+Virginia|There are about 6 million registered voters in Virginia. Taken at face value, the largest claim documented would be roughly 0.1051% of active registered voters.|Y|6000602|6,000,000|6 million|6303
+Washington||N|5013112|5,000,000|5 million|
+West Virginia|There are about 1.1 million registered voters in West Virginia. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|N|1118468|1,100,000|1.1 million|1
+Wisconsin|There are about 3.8 million registered voters in Wisconsin. Taken at face value, the largest claim documented would be roughly 0.0001% of active registered voters.|N|3885960|3,800,000|3.8 million|2
+Wyoming|There are about 2 hundred thousand registered voters in Wyoming. Taken at face value, the largest claim documented would be roughly 0.0015% of active registered voters.|Y|296960|200,000|2 hundred thousand|3

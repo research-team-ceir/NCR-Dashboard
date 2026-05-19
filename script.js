@@ -82,6 +82,7 @@ Promise.all([
 
         // loop through profiles
         for (var j = 0; j < profiles.length; j++) {
+            console.log("i")
             var profileState = profiles[j].state;
 
             if (tileState == profileState) {
@@ -177,7 +178,7 @@ Promise.all([
         if (d.save == "Y") {
             saveTag
                 .style("display", "block")
-                .text("MOU to use SAVE");
+                .text("SAVE MOU");
 
         } else {
             saveTag
