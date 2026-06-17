@@ -24,7 +24,7 @@ d3.select("#ncr-dash")
 var svg = d3.select("#ncr-dash")
     .append("svg")
     .attr("width", "100%")
-    .attr("viewBox", "0 0 666 550");
+    .attr("viewBox", "0 0 666 525");
 
 var ncrViz = svg.append("g")
     .attr("id", "ncr-viz");
@@ -49,6 +49,14 @@ var saveTag = ncrHeader.append("p")
     .style("padding", "7px")
     .style("display", "none");
 
+var closeBtn = ncrHeader
+    .append("span")
+    .html("&times")
+    .style("font-size", "40px")
+    .style("margin-left", "auto")
+    .style("cursor", "pointer")
+    .style("display", "none");
+
 var ncrProfile = ncrText.append("div")
     .attr("id", "ncr-profile")
     .style("margin-bottom", "20px");
@@ -69,9 +77,10 @@ Promise.all([
     d3.dsv("|", "data/profiles.csv")
 ]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
+    console.log(profiles)
 
     var found;
-    const nullSum = [{summary: "No cases of noncitizens registering to vote or voting."}];
+    const nullSum = [{summary: "No reported cases found of possible noncitizens registering to vote or voting."}];
 
     // merge summaries to tilemap
     var currSums = []; // holds all the summaries in an array
@@ -82,7 +91,6 @@ Promise.all([
 
         // loop through profiles
         for (var j = 0; j < profiles.length; j++) {
-            console.log("i")
             var profileState = profiles[j].state;
 
             if (tileState == profileState) {
@@ -124,7 +132,7 @@ Promise.all([
     // #region MAP SETUP
     var colorScale = d3.scaleLinear()
         .domain([0, 1])
-        .range(["#bebebe", "#9a53b7"]);
+        .range(["#bebebe", "#b36bcf"]);
 
     var mapContainer = ncrViz.append("g")
         .attr("id", "map-container");
@@ -168,17 +176,37 @@ Promise.all([
 
     // #endregion
 
+    // #region LOGO
+    var logo = ncrViz
+        .append("g")
+        .attr("id", "logo");
+
+    logo
+        .append("svg:image")
+        .attr("xlink:href", "images/CEIR_Logo_Vertical_OneColor_LightBlue.png")
+        .attr("x", 666 - 60)
+        .attr("y", 525 - 60)
+        .attr("width", 50)
+        .attr("height", 50);
+
+    // #endregion
+
 
     // #region UPDATE TEXT
     var updateText = function(e, d) {
+        console.log(d)
         stateHeader.text(d.name);
         ncrProfile.text(d.profile);
 
+        ncrText.style("display", "block");
+        closeBtn.style("display", "block");
+
         // update save tag
         if (d.save == "Y") {
+            console.log("yes")
             saveTag
                 .style("display", "block")
-                .text("SAVE MOU");
+                .text("Uses SAVE");
 
         } else {
             saveTag
@@ -298,6 +326,11 @@ Promise.all([
 
     map
         .on("click", updateText);
+
+    closeBtn
+        .on("click", function() {
+            ncrText.style("display", "none")
+        });
 
     // #endregion
 
