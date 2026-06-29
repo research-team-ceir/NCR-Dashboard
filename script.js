@@ -17,14 +17,22 @@ d3.select("body")
 
 d3.select("#ncr-dash")
     .append("h1")
-    .text("Review of Claims of Noncitizen Registrants and Voters")
+    .text("Tracker of Claims of Registration or Voting by Possible Noncitizens")
     .style("text-align", "center")
+    .style("margin-bottom", "0")
+    .style("font-family", "'Source Serif 4', sans-serif");
+
+d3.select("#ncr-dash")
+    .append("p")
+    .text("As of April 30, 2026")
+    .style("text-align", "right")
+    .style("font-style", "italic")
     .style("font-family", "'Source Serif 4', sans-serif");
 
 var svg = d3.select("#ncr-dash")
     .append("svg")
     .attr("width", "100%")
-    .attr("viewBox", "0 0 666 525");
+    .attr("viewBox", "0 0 666 520");
 
 var ncrViz = svg.append("g")
     .attr("id", "ncr-viz");
@@ -77,8 +85,6 @@ Promise.all([
     d3.dsv("|", "data/profiles.csv")
 ]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
-    console.log(profiles)
-
     var found;
     const nullSum = [{summary: "No reported cases found of possible noncitizens registering to vote or voting."}];
 
@@ -185,7 +191,7 @@ Promise.all([
         .append("svg:image")
         .attr("xlink:href", "images/CEIR_Logo_Vertical_OneColor_LightBlue.png")
         .attr("x", 666 - 60)
-        .attr("y", 525 - 60)
+        .attr("y", 520 - 60)
         .attr("width", 50)
         .attr("height", 50);
 
@@ -194,16 +200,23 @@ Promise.all([
 
     // #region UPDATE TEXT
     var updateText = function(e, d) {
-        console.log(d)
         stateHeader.text(d.name);
         ncrProfile.text(d.profile);
 
         ncrText.style("display", "block");
         closeBtn.style("display", "block");
 
+        // bold and italicize profile text
+        var profileP = document.getElementById("ncr-profile");
+
+        var actReg = profileP.textContent.match(/((\d+.\d million)|(\d+ million))|(\d+,\d+)/)[0];
+        profileP.innerHTML = profileP.innerHTML.replace(/((\d+.\d million)|(\d+ million))|(\d+,\d+)/, "<b>" + actReg + "</b>");
+
+        var perc = profileP.textContent.match(/\d.\d+%/);
+        profileP.innerHTML = profileP.innerHTML.replace(/\d.\d+%/, "<b>" + perc + "</b>");
+
         // update save tag
         if (d.save == "Y") {
-            console.log("yes")
             saveTag
                 .style("display", "block")
                 .text("Uses SAVE");
@@ -226,9 +239,7 @@ Promise.all([
                     .append("p")
                     .text(d.summaries[i].summary)
                     .style("margin-top", "0");
-
-                ncrProfile.style("display", "none");
-
+                    
                 break;
             } else {
                 ncrProfile.style("display", "block");
@@ -308,13 +319,18 @@ Promise.all([
                     .attr("id", d.name + "-" + i);
             };
 
+        // italicize update text
+        var updateP = document.getElementById(d.name + "-" + i);
+        var updateTxt = updateP.textContent.match(/Update.*:/);
+        updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
+
         // add link to text
-        var currP = document.getElementById(d.name + "-" + i);
+        var linkP = document.getElementById(d.name + "-" + i);
         var currLinks = d.summaries[i].link.split("||");
         var currLinkTexts = d.summaries[i].link_text.split("||");
 
         for (var j = 0; j < currLinks.length; j++) {
-            currP.innerHTML = currP.innerHTML.replace(currLinkTexts[j], "<a href='" + currLinks[j] + "' target='_blank'>" + currLinkTexts[j] + "</a>");
+            linkP.innerHTML = linkP.innerHTML.replace(currLinkTexts[j], "<a href='" + currLinks[j] + "' target='_blank'>" + currLinkTexts[j] + "</a>");
         };
         
     };
