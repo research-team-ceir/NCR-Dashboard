@@ -1,11 +1,13 @@
 // #region SETUP
 function center(selection, y) {
-    var width = selection.node().getBBox().width;
-    var x = selection.node().getBBox().x;
-    selection.attr("transform", "translate(" + ((666-width)/2 - x) + "," + y + ")");
+    document.fonts.ready.then(() => {
+        var width = selection.node().getBoundingClientRect().width;
+        var x = selection.node().getBBox().x;
+        selection.attr("transform", "translate(" + ((666-width)/2 - x) + "," + y + ")");
+    });
 };
 
-d3.select("body")
+d3.select("#ncr-dashboard-container")
     .append("div")
     .attr("id", "ncr-dash")
         .style("display", "grid")
@@ -24,7 +26,7 @@ d3.select("#ncr-dash")
 
 d3.select("#ncr-dash")
     .append("p")
-    .text("As of June 30, 2026")
+    .text("As of July 2, 2026")
     .style("text-align", "right")
     .style("font-style", "italic")
     .style("font-family", "'Source Serif 4', sans-serif");
@@ -80,9 +82,9 @@ var ncrSum = ncrText.append("div")
 // #endregion
 
 Promise.all([
-    d3.json("data/tile_map.json"),
-    d3.dsv("|", "data/summaries.csv"),
-    d3.dsv("|", "data/profiles.csv")
+    d3.json("https://research-team-ceir.github.io/NCR-Dashboard/data/tile_map.json"),
+    d3.dsv("|", "https://research-team-ceir.github.io/NCR-Dashboard/data/summaries.csv"),
+    d3.dsv("|", "https://research-team-ceir.github.io/NCR-Dashboard/data/profiles.csv")
 ]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
     var found;
@@ -189,7 +191,7 @@ Promise.all([
 
     logo
         .append("svg:image")
-        .attr("xlink:href", "images/CEIR_Logo_Vertical_OneColor_LightBlue.png")
+        .attr("xlink:href", "https://research-team-ceir.github.io/NCR-Dashboard/images/CEIR_Logo_Vertical_OneColor_LightBlue.png")
         .attr("x", 666 - 60)
         .attr("y", 520 - 60)
         .attr("width", 50)
