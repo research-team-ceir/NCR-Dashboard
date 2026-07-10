@@ -24,7 +24,7 @@ d3.select("#ncr-dash")
 
 d3.select("#ncr-dash")
     .append("p")
-    .text("As of April 30, 2026")
+    .text("As of June 30, 2026")
     .style("text-align", "right")
     .style("font-style", "italic")
     .style("font-family", "'Source Serif 4', sans-serif");
