@@ -18,9 +18,11 @@ d3.select("#ncr-dashboard-container")
         .style("margin-right", "auto");
 
 d3.select("#ncr-dash")
-    .append("h1")
-    .text("Tracker of Claims of Registration or Voting by Possible Noncitizens")
-    .style("text-align", "center")
+    .append("p")
+    .text("Click a state to see claims of registration or voting by possible noncitizens.    ")
+    .style("font-weight", "bold")
+    .style("font-size", "18px")
+    .style("text-align", "left")
     .style("margin-bottom", "0")
     .style("font-family", "'Source Serif 4', sans-serif");
 
