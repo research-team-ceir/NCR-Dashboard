@@ -21,8 +21,8 @@ d3.select("#ncr-dash")
     .append("p")
     .text("Click a state to see claims of registration or voting by possible noncitizens.    ")
     .style("font-weight", "bold")
-    .style("font-size", "18px")
-    .style("text-align", "left")
+    .style("font-size", "20px")
+    .style("text-align", "center")
     .style("margin-bottom", "0")
     .style("font-family", "'Source Serif 4', sans-serif");
 
