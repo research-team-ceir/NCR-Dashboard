@@ -84,9 +84,9 @@ var ncrSum = ncrText.append("div")
 // #endregion
 
 Promise.all([
-    d3.json("https://research-team-ceir.github.io/NCR-Dashboard/data/tile_map.json"),
-    d3.dsv("|", "https://research-team-ceir.github.io/NCR-Dashboard/data/summaries.csv"),
-    d3.dsv("|", "https://research-team-ceir.github.io/NCR-Dashboard/data/profiles.csv")
+    d3.json("data/tile_map.json"),
+    d3.dsv("|", "data/summaries.csv"),
+    d3.dsv("|", "data/profiles.csv")
 ]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
     var found;
