@@ -1,7 +1,7 @@
 // #region SETUP
 function center(selection, y) {
     document.fonts.ready.then(() => {
-        var width = selection.node().getBoundingClientRect().width;
+        var width = selection.node().getBBox().width;
         var x = selection.node().getBBox().x;
         selection.attr("transform", "translate(" + ((666-width)/2 - x) + "," + y + ")");
     });
