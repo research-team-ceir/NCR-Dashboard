@@ -85,8 +85,8 @@ var ncrSum = ncrText.append("div")
 
 Promise.all([
     d3.json("data/tile_map.json"),
-    d3.dsv("|", "data/summaries.csv"),
-    d3.dsv("|", "data/profiles.csv")
+    d3.csv("data/summaries.csv"),
+    d3.csv("data/profiles.csv")
 ]).then(function([tileMap, ncrData, profiles]) {
     // #region DATA MERGE
     var found;
