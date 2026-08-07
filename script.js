@@ -101,25 +101,25 @@ Promise.all([
 
         // loop through profiles
         for (var j = 0; j < profiles.length; j++) {
-            var profileState = profiles[j].state;
+            var profileState = profiles[j].State;
 
             if (tileState == profileState) {
-                tileMap.states[i].profile = profiles[j].profile;
-                tileMap.states[i].save = profiles[j].save;
+                tileMap.states[i].profile = profiles[j].Profile;
+                tileMap.states[i].save = profiles[j].SAVE;
             };
         };
 
         // loop through summaries
         for (var j = 0; j < ncrData.length; j++) {
-            var ncrState = ncrData[j].state;
+            var ncrState = ncrData[j].State;
 
             // reset currSums
             if (tileState != ncrState) {
                 currSums = [];
             } else if (tileState == ncrState) {
                 // add summaries
-                currSum = {date: ncrData[j].date, summary: ncrData[j].summary,
-                    link: ncrData[j].link, link_text: ncrData[j].link_text};
+                currSum = {date: ncrData[j].Date, summary: ncrData[j].Summary,
+                    link: ncrData[j].Link, link_text: ncrData[j].Link_Text};
                 currSums.push(currSum);
                 tileMap.states[i].summaries = currSums;
 
