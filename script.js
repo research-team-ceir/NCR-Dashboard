@@ -28,7 +28,7 @@ d3.select("#ncr-dash")
 
 d3.select("#ncr-dash")
     .append("p")
-    .text("As of July 23, 2026")
+    .text("As of August 6, 2026")
     .style("text-align", "right")
     .style("font-style", "italic")
     .style("font-family", "'Source Serif 4', sans-serif");
@@ -83,65 +83,12 @@ var ncrSum = ncrText.append("div")
 
 // #endregion
 
-Promise.all([
-    d3.json("data/tile_map.json"),
-    d3.csv("data/summaries.csv"),
-    d3.csv("data/profiles.csv")
-]).then(function([tileMap, ncrData, profiles]) {
-    // #region DATA MERGE
-    var found;
-    const nullSum = [{summary: "No reported cases found of possible noncitizens registering to vote or voting."}];
-
-    // merge summaries to tilemap
-    var currSums = []; // holds all the summaries in an array
-    var currSum; // the current summary
-    for (var i = 0; i < tileMap.states.length; i++) {
-        var tileState = tileMap.states[i].name;
-        found = false;
-
-        // loop through profiles
-        for (var j = 0; j < profiles.length; j++) {
-            var profileState = profiles[j].State;
-
-            if (tileState == profileState) {
-                tileMap.states[i].profile = profiles[j].Profile;
-                tileMap.states[i].save = profiles[j].SAVE;
-            };
-        };
-
-        // loop through summaries
-        for (var j = 0; j < ncrData.length; j++) {
-            var ncrState = ncrData[j].State;
-
-            // reset currSums
-            if (tileState != ncrState) {
-                currSums = [];
-            } else if (tileState == ncrState) {
-                // add summaries
-                currSum = {date: ncrData[j].Date, summary: ncrData[j].Summary,
-                    link: ncrData[j].Link, link_text: ncrData[j].Link_Text};
-                currSums.push(currSum);
-                tileMap.states[i].summaries = currSums;
-
-                // boolean for whether or not a state has a NCR summary
-                tileMap.states[i].value = 1;
-                found = true;
-            };
-        };
-
-        if (found == false) {
-            tileMap.states[i].summaries = nullSum;
-            tileMap.states[i].value = 0;
-            tileMap.states[i].save = "NA";
-        };
-
-    };
-
-    // #endregion
+d3.json("data/NCR_data.json")
+    .then(data => {
 
     // #region MAP SETUP
-    var colorScale = d3.scaleLinear()
-        .domain([0, 1])
+    var colorScale = d3.scaleOrdinal()
+        .domain(["N", "Y"])
         .range(["#bebebe", "#b36bcf"]);
 
     var mapContainer = ncrViz.append("g")
@@ -153,14 +100,14 @@ Promise.all([
     var map = mapContainer.append("g")
         .attr("id", "map")
         .selectAll("rect")
-        .data(tileMap.states)
+        .data(data)
         .enter()
         .append("rect")
             .attr("x", d => d.x * mapSize)
             .attr("y", d => d.y * mapSize)
             .attr("width", 5 * mapSize)
             .attr("height", 5 * mapSize)
-            .attr("fill", d => colorScale(d.value))
+            .attr("fill", d => colorScale(d.has_stories))
             .attr("cursor", "pointer")
 
 
@@ -168,7 +115,7 @@ Promise.all([
     mapContainer.append("g")
         .attr("id", "map-abb")
         .selectAll("text")
-        .data(tileMap.states)
+        .data(data)
         .enter()
         .append("text")
             .text(d => d.abb)
@@ -204,7 +151,7 @@ Promise.all([
 
     // #region UPDATE TEXT
     var updateText = function(e, d) {
-        stateHeader.text(d.name);
+        stateHeader.text(d.state);
         ncrProfile.text(d.profile);
 
         ncrText.style("display", "block");
@@ -220,7 +167,7 @@ Promise.all([
         profileP.innerHTML = profileP.innerHTML.replace(/\d.\d+%/, "<b>" + perc + "</b>");
 
         // update save tag
-        if (d.save == "Y") {
+        if (d.SAVE == "Y") {
             saveTag
                 .style("display", "block")
                 .text("Uses SAVE");
@@ -311,7 +258,7 @@ Promise.all([
                     currSum
                         .append("p")
                         .text(sums[j])
-                        .attr("id", d.name + "-" + i)
+                        .attr("id", d.state + "-" + i)
                         .style("margin-top", 0);
                 };
 
@@ -320,16 +267,16 @@ Promise.all([
                 currSum
                     .append("p")
                     .text(d.summaries[i].summary)
-                    .attr("id", d.name + "-" + i);
+                    .attr("id", d.state + "-" + i);
             };
 
         // italicize update text
-        var updateP = document.getElementById(d.name + "-" + i);
+        var updateP = document.getElementById(d.state + "-" + i);
         var updateTxt = updateP.textContent.match(/Update.*:/);
         updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
 
         // add link to text
-        var linkP = document.getElementById(d.name + "-" + i);
+        var linkP = document.getElementById(d.state + "-" + i);
         var currLinks = d.summaries[i].link.split("||");
         var currLinkTexts = d.summaries[i].link_text.split("||");
 
