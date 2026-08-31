@@ -28,7 +28,7 @@ d3.select("#ncr-dash")
 
 d3.select("#ncr-dash")
     .append("p")
-    .text("As of August 6, 2026")
+    .text("As of August 20, 2026")
     .style("text-align", "right")
     .style("font-style", "italic")
     .style("font-family", "'Source Serif 4', sans-serif");
@@ -181,20 +181,17 @@ d3.json("data/NCR_data.json")
 
         var dates = [];
 
+        if (d.has_stories == "N") {
+            ncrSum
+                .append("div")
+                .append("p")
+                .text("No reported cases found of possible noncitizens registering to vote or voting.")
+                .style("margin-top", "0");
+            };
+
         for (var i = 0; i < d.summaries.length; i++) {
 
-            // if there are no summaries, just add the text and break
-            if (d.value == 0) {
-                ncrSum
-                    .append("div")
-                    .append("p")
-                    .text(d.summaries[i].summary)
-                    .style("margin-top", "0");
-                    
-                break;
-            } else {
-                ncrProfile.style("display", "block");
-            }
+            ncrProfile.style("display", "block");
     
             // adding summaries
             if (!dates.includes(d.summaries[i].date)) {
@@ -230,7 +227,7 @@ d3.json("data/NCR_data.json")
                         .style("background-color", "#bebebe")
                         .style("margin-left", "auto")
                         .style("margin-right", "auto");
-                }
+                };
 
                 // circle
                 currTimeline
