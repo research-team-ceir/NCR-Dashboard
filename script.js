@@ -255,8 +255,22 @@ d3.json("data/NCR_data.json")
                     currSum
                         .append("p")
                         .text(sums[j])
-                        .attr("id", d.state + "-" + i)
+                        .attr("id", d.state + "-" + i + "-" + j)
                         .style("margin-top", 0);
+
+                    // italicize update text
+                    var updateP = document.getElementById(d.state + "-" + i + "-" + j);
+                    var updateTxt = updateP.textContent.match(/Update.*:/);
+                    updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
+
+                    // add link to text
+                    var linkP = document.getElementById(d.state + "-" + i + "-" + j);
+                    var currLinks = d.summaries[i].link.split("||");
+                    var currLinkTexts = d.summaries[i].link_text.split("||");
+
+                    for (var l = 0; l < currLinks.length; l++) {
+                        linkP.innerHTML = linkP.innerHTML.replace(currLinkTexts[l], "<a href='" + currLinks[l] + "' target='_blank'>" + currLinkTexts[l] + "</a>");
+                    };
                 };
 
             // if there is no summary add the default text
@@ -267,19 +281,7 @@ d3.json("data/NCR_data.json")
                     .attr("id", d.state + "-" + i);
             };
 
-        // italicize update text
-        var updateP = document.getElementById(d.state + "-" + i);
-        var updateTxt = updateP.textContent.match(/Update.*:/);
-        updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
-
-        // add link to text
-        var linkP = document.getElementById(d.state + "-" + i);
-        var currLinks = d.summaries[i].link.split("||");
-        var currLinkTexts = d.summaries[i].link_text.split("||");
-
-        for (var j = 0; j < currLinks.length; j++) {
-            linkP.innerHTML = linkP.innerHTML.replace(currLinkTexts[j], "<a href='" + currLinks[j] + "' target='_blank'>" + currLinkTexts[j] + "</a>");
-        };
+        
         
     };
             
