@@ -170,9 +170,15 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 1,100 votes in Arizona may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0322% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/22/2026",
+				"summary": "\r\nThe Yavapai County recorder ran the county's voter list through SAVE to identify 30 possible noncitizens. Four of the individuals allegedly have a voting history. After sending a notice and attempting to reach the 30 individuals through other methods, their registrations were canceled.||SAVE also inaccurately flagged 28 individuals in Yavapai County who have citizenship documentation. \r\n",
+				"link": "https://www.votebeat.org/arizona/2026/08/22/yavapai-county-save-tool-noncitizen-voters-michelle-burchill/",
+				"link_text": "30 possible noncitizens"
 			}
 		],
-		"profile": "There are about 4.4 million active registered voters in Arizona. Taken at face value, the largest claim documented (07/09/2026) would be roughly 0.1565% of active registered voters.",
+		"profile": "There are about 4.4 million active registered voters in Arizona. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.025% of active registered voters.",
 		"SAVE": "Y",
 		"has_stories": "Y"
 	},
@@ -246,6 +252,12 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 4,300 votes in California may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0242% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/28/2026",
+				"summary": "An individual was charged with registering to vote as a noncitizen in 2025 and falsely claiming citizenship on their voter registration application.",
+				"link": "https://www.justice.gov/usao-cdca/pr/honduran-national-living-san-fernando-valley-arrested-federal-criminal-complaint",
+				"link_text": "charged"
 			}
 		],
 		"profile": "There are about 22.6 million active registered voters in California. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.019% of active registered voters.",
@@ -400,7 +412,7 @@
 			},
 			{
 				"date": "11/24/2025",
-				"summary": "The U.S. Department of Justice indicted an individual for falsely affirming US citizenship and voting illegally as a noncitizen in the 2020 election.",
+				"summary": "The U.S. Department of Justice indicted an individual for falsely affirming US citizenship and allegedly voting as a noncitizen in the 2020 election.",
 				"link": "https://www.justice.gov/usao-mdfl/pr/bahamian-national-indicted-illegal-voting-passport-fraud-and-false-claim-united-states",
 				"link_text": "indicted an individual"
 			},
@@ -436,7 +448,7 @@
 			},
 			{
 				"date": "07/30/2026",
-				"summary": "A possible noncitizen was charged with illegally voting in seven general elections between 2004 and 2024.",
+				"summary": "A possible noncitizen was charged with voting in seven general elections between 2004 and 2024. The individual admitted to voting in the elections.",
 				"link": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-charges-canadian-citizen-illegally-voting-multiple",
 				"link_text": "charged with"
 			},
@@ -492,6 +504,12 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 400 votes in Georgia may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.008% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "09/01/2026",
+				"summary": "The secretary of state's office identified 228 possible noncitizens who have allegedly voted since 1996. These individuals were identified through both the use of SAVE and an audit by the Georgia Department of Audits and Accounts.||During the review, the secretary of state's office also identified 204 possible noncitizen records with a voting history that had been moved to \"pending citizenship status\" after an earlier audit.",
+				"link": "https://sos.ga.gov/news/state-audit-proves-georgia-national-leader-clean-voter-lists",
+				"link_text": "228 possible noncitizens"
 			}
 		],
 		"profile": "There are about 7.2 million active registered voters in Georgia. Taken at face value, the largest claim documented (07/16/2026) would be roughly 0.0354% of active registered voters.",
@@ -506,13 +524,13 @@
 		"summaries": [
 			{
 				"date": "06/01/2026",
-				"summary": "The U.S. Department of Justice charged an individual with voting as a noncitizen in 2022 and 2024. This is the first illegal voting case involving a noncitizen in Hawaii in at least 40 years.",
+				"summary": "The U.S. Department of Justice charged an individual with allegedly voting as a noncitizen in 2022 and 2024. This is the first illegal voting case involving a noncitizen in Hawaii in at least 40 years.",
 				"link": "https://www.justice.gov/usao-hi/pr/filipino-national-charged-unlawfully-voting-alien||https://civilbeat.org/2026/06/hawaii-immigrant-charged-voting-illegally-trump-crackdown/",
 				"link_text": "voting as a noncitizen||at least 40 years"
 			},
 			{
 				"date": "07/24/2026",
-				"summary": "An individual noncitizen was charged with voting as a noncitizen in the 2024 election.",
+				"summary": "An individual was charged with voting as a noncitizen in the 2024 election.",
 				"link": "https://www.justice.gov/usao-hi/pr/filipino-national-charged-unlawfully-voting-alien-0",
 				"link_text": "charged with voting"
 			},
@@ -541,7 +559,7 @@
 			},
 			{
 				"date": "08/06/2025",
-				"summary": "The secretary of state announced the arrest of an individual charged with registering and voting as a noncitizen.",
+				"summary": "The secretary of state announced the arrest of an individual charged with registering and allegedly voting as a noncitizen.",
 				"link": "https://press.voteidaho.gov/press-release/election-security-criminal-charges/",
 				"link_text": "announced the arrest"
 			},
@@ -779,9 +797,15 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 200 votes in Kentucky may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0093% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/31/2026",
+				"summary": "According to the state board of elections, 394 possible noncitizens have been removed from the voter list since January 2019. These individuals were excused from jury duty because they indicated they were noncitizens.",
+				"link": "https://elect.ky.gov/Resources/Pages/List-Maintenance.aspx",
+				"link_text": "394 possible noncitizens"
 			}
 		],
-		"profile": "There are about 3.2 million active registered voters in Kentucky. Taken at face value, the largest claim documented (07/31/2026) would be roughly 0.0118% of active registered voters.",
+		"profile": "There are about 3.2 million active registered voters in Kentucky. Taken at face value, the largest claim documented (07/31/2026) would be roughly 0.0123% of active registered voters.",
 		"SAVE": "N",
 		"has_stories": "Y"
 	},
@@ -910,7 +934,7 @@
 			},
 			{
 				"date": "05/19/2026",
-				"summary": "The U.S. Department of Justice charged an individual for voting illegally as a noncitizen since 2008. The individual allegedly registered to vote in 2016.",
+				"summary": "The U.S. Department of Justice charged an individual for allegedly voting as a noncitizen in multiple elections since 2008. The individual allegedly registered to vote in 2016.",
 				"link": "https://www.justice.gov/usao-ma/pr/legal-permanent-resident-arrested-voting-federal-elections-2008||https://www.foxnews.com/us/canadian-noncitizen-accused-illegally-voting-federal-state-elections",
 				"link_text": "charged an individual||allegedly registered to vote"
 			},
@@ -1152,6 +1176,12 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 250 votes in Nevada may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0178% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/20/2026",
+				"summary": "Update to the 7/16/2026 entry: The U.S. Department of Homeland Security (DHS) clarified its earlier claim of noncitizens on Nevada’s voter list, noting the department had identified 185 possible noncitizens and that the 16,000 figure from July 16 was a “ceiling.” The Department is still considering an additional 14,000 individuals for further review.||Nevada officials asked DHS for more information but have reportedly only received incomplete data that is “nearly impossible” to verify. DHS told Nevada officials that they lack high enough confidence in their findings to share the full data.",
+				"link": "https://www.nytimes.com/2026/08/20/us/politics/trump-nevada-voter-election-fraud.html",
+				"link_text": "told Nevada officials"
 			}
 		],
 		"profile": "There are about 2.1 million active registered voters in Nevada. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0119% of active registered voters.",
@@ -1219,7 +1249,7 @@
 			},
 			{
 				"date": "07/02/2026",
-				"summary": "The U.S Department of Justice charged an individual with illegally voting as a noncitizen in the 2022 general election. When the individual later applied for naturalization, he allegedly claimed to have never registered to vote or voted in a federal election.",
+				"summary": "The U.S Department of Justice charged an individual with allegedly voting as a noncitizen in the 2022 general election. When the individual later applied for naturalization, he claimed to have never registered to vote or voted in a federal election.",
 				"link": "https://www.justice.gov/usao-nj/pr/alien-slovakia-charged-illegally-voting-federal-election-and-making-false-statements",
 				"link_text": "voting as a noncitizen"
 			},
@@ -1295,7 +1325,7 @@
 		"summaries": [
 			{
 				"date": "04/28/2025",
-				"summary": "The U.S. Department of Justice charged an individual with illegally voting as a noncitizen in the 2020 election.",
+				"summary": "The U.S. Department of Justice charged an individual with allegedly voting as a noncitizen in the 2020 election.",
 				"link": "https://www.justice.gov/usao-ndny/pr/iraqi-man-charged-illegal-voting-alien",
 				"link_text": "charged an individual"
 			},
@@ -1304,9 +1334,15 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 1,700 votes in New York may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0196% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/24/2026",
+				"summary": "Project CIVICA claimed to identify 72 possible noncitizens on the active voter list across 14 counties in New York based on records from 2024 and 2026. They also identified 90 possible noncitizens with inactive registration records and 10,518 possible noncitizens with canceled registration records. It is unclear how many of the 10,518 canceled records were ever processed or active. Of the flagged records, 88 individuals across 12 counties have a voting history.||According to Project CIVICA, some of the individuals disclosed their noncitizenship status on the voter registration application and their application was still transmitted to the county elections board by the Department of Motor Vehicles or another agency.",
+				"link": "https://projectcivica.org/images/documents/Project_CIVICA_secure_Open_Doors_Non-Citizens_NY_2026_Full_Report.pdf",
+				"link_text": "72 possible noncitizens"
 			}
 		],
-		"profile": "There are about 12.4 million active registered voters in New York. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0137% of active registered voters.",
+		"profile": "There are about 12.4 million active registered voters in New York. Taken at face value, the largest claim documented (08/24/2026) would be roughly 0.0848% of active registered voters.",
 		"SAVE": "N",
 		"has_stories": "Y"
 	},
@@ -1601,7 +1637,7 @@
 			},
 			{
 				"date": "03/05/2026",
-				"summary": "The U.S. Department of Justice charged an individual with illegally voting in the 2024 general election as a noncitizen. The individual has allegedly voted in several past elections.",
+				"summary": "The U.S. Department of Justice charged an individual with allegedly voting in the 2024 general election as a noncitizen. The individual has allegedly voted in several past elections.",
 				"link": "https://www.justice.gov/usao-edpa/pr/illegal-alien-charged-fraudulently-voting-2024-federal-election||https://www.foxnews.com/politics/illegal-immigrant-charged-voting-pennsylvania-5-presidential-elections",
 				"link_text": "charged an individual||allegedly voted"
 			},
@@ -1624,6 +1660,12 @@
 				"link_text": "five possible noncitizens"
 			},
 			{
+				"date": "07/30/2026",
+				"summary": "Following claims of noncitizen registration in Chester County based on information from juror records, the Pennsylvania Department of State clarified that juror records lack enough information to accurately match against voter records and are not fit for comparison to the voter list. The Chester County commissioner plans to further investigate the claims.||Early Vote Action said it had identified 250 possible noncitizen registrants in Chester County after comparing the list of disqualified jurors who disclosed noncitizenship to the county’s voter list. The group claims that the possible noncitizens were registered between 2021 and June 2026 and that some have a voting history. ",
+				"link": "https://www.wesanews.org/politics-government/2026-08-03/activists-non-juror-list-voter-registration||https://broadandliberty.com/2026/07/30/felice-fein-non-citizens-on-voter-rolls/||",
+				"link_text": "not fit for comparison||identified 250"
+			},
+			{
 				"date": "08/11/2026",
 				"summary": "The Allegheny County Elections Division Manager stated there may have been three possible noncitizen registrants in 2026 and one in 2025 in the county. These cases have not been confirmed and the process by which these individuals were identified is unclear.",
 				"link": "https://triblive.com/news/politics-election/conservative-group-targets-allegheny-co-juror-records-in-search-of-possible-voter-fraud/",
@@ -1634,6 +1676,12 @@
 				"summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 1,000 votes in Pennsylvania may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0144% of ballots cast in the state.",
 				"link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
 				"link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+			},
+			{
+				"date": "08/26/2026",
+				"summary": "Update to the 7/16/2026 entry: During a meeting between the Pennsylvania Department of State and the U.S. Department of Homeland Security (DHS), the DHS explained they lacked \"high confidence\" in the number of possible noncitizens flagged in their initial review.",
+				"link": "https://www.democracydocket.com/wp-content/uploads/2026/08/08.25.26-Letter-to-DHS-follow-up-from-Aug-13-meeting.pdf||https://www.democracydocket.com/news-alerts/dhs-lacks-high-confidence-in-its-pennsylvania-noncitizen-voter-roll-claims/",
+				"link_text": "meeting||lacked \"high confidence\""
 			}
 		],
 		"profile": "There are about 8.4 million active registered voters in Pennsylvania. Taken at face value, the largest claim documented (10/25/2017) would be roughly 0.0138% of active registered voters.",
@@ -1677,7 +1725,7 @@
 			},
 			{
 				"date": "06/10/2026",
-				"summary": "A grand jury indicted an individual for illegally voting as a noncitizen. Officials claim he registered to vote in August 2024 and voted in the 2024 general election.",
+				"summary": "A grand jury indicted an individual with allegedly voting as a noncitizen. Officials claim he registered to vote in August 2024 and voted in the 2024 general election.",
 				"link": "https://www.justice.gov/usao-sc/pr/legal-permanent-resident-indicted-illegally-voting-2024-election||https://www.wyff4.com/article/south-carolina-man-indicted-alien-voting-case/71547749",
 				"link_text": "indicted an individual||registered to vote"
 			},
@@ -2004,6 +2052,12 @@
 				"summary": "RadioIQ's review of more than 650 cases of election-related crimes in the state court system found one instance of a possible noncitizen registering to vote and no confirmed instances of noncitizen voting over the last 20 years.",
 				"link": "https://www.wvtf.org/news/2024-10-30/understanding-virginias-noncitizen-registered-voters",
 				"link_text": "one instance"
+			},
+			{
+				"date": "07/09/2026",
+				"summary": "An individual noncitizen used the identity of a US citizen to register to vote in 2016. The individual voted in the 2016 and 2020 federal elections.",
+				"link": "https://www.justice.gov/usao-edva/pr/illegal-alien-mexico-sentenced-over-two-years-prison-after-using-stolen-identity-vote",
+				"link_text": "used the identity"
 			},
 			{
 				"date": "08/18/2026",
