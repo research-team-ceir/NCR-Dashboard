@@ -179,8 +179,6 @@ d3.json("data/NCR_data.json")
 
         ncrSum.selectAll("*").remove();
 
-        var dates = [];
-
         if (d.has_stories == "N") {
             ncrSum
                 .append("div")
@@ -194,95 +192,82 @@ d3.json("data/NCR_data.json")
             ncrProfile.style("display", "block");
     
             // adding summaries
-            if (!dates.includes(d.summaries[i].date)) {
-                // group summaries by date
-                dates.push(d.summaries[i].date);
 
-                // date
-                ncrSum
-                    .append("div")
-                    .append("p")
-                    .text(d.summaries[i].date)
-                    .style("margin-top", 0)
-                    .style("text-align", "right");
+            // date
+            ncrSum
+                .append("div")
+                .append("p")
+                .text(d.summaries[i].date)
+                .style("margin-top", 0)
+                .style("text-align", "right");
 
-                // circle and vertical line that make the "timeline" visual
-                var currTimeline = ncrSum
-                    .append("div")
-                    .style("display", "flex")
-                    .style("flex-direction", "column")
-                    .style("margin-left", "10px")
-                    .style("margin-right", "10px");
+            // circle and vertical line that make the "timeline" visual
+            var currTimeline = ncrSum
+                .append("div")
+                .style("display", "flex")
+                .style("flex-direction", "column")
+                .style("margin-left", "10px")
+                .style("margin-right", "10px");
 
-                // weird work around to get the circles to align with the date
-                if (i == 0) {
-                    currTimeline
-                        .append("div")
-                        .style("margin-top", "6px");
-                } else {
-                    currTimeline
-                        .append("div")
-                        .style("width", "3px")
-                        .style("height", "6px")
-                        .style("background-color", "#bebebe")
-                        .style("margin-left", "auto")
-                        .style("margin-right", "auto");
-                };
-
-                // circle
+            // weird work around to get the circles to align with the date
+            if (i == 0) {
                 currTimeline
                     .append("div")
-                    .style("width", "20px")
-                    .style("height", "20px")
-                    .style("background-color", "#bebebe")
-                    .style("border-radius", "50%")
-                    .style("flex", "none");
-
-                // rectangle
-                var rect = currTimeline
+                    .style("margin-top", "6px");
+            } else {
+                currTimeline
                     .append("div")
                     .style("width", "3px")
-                    .style("height", "100%")
+                    .style("height", "6px")
                     .style("background-color", "#bebebe")
                     .style("margin-left", "auto")
                     .style("margin-right", "auto");
-
-                // summary
-                var currSum = ncrSum.append("div");
-                var sums = d.summaries[i].summary.split("||");
-
-                for (j = 0; j < sums.length; j++) {
-                    currSum
-                        .append("p")
-                        .text(sums[j])
-                        .attr("id", d.state + "-" + i + "-" + j)
-                        .style("margin-top", 0);
-
-                    // italicize update text
-                    var updateP = document.getElementById(d.state + "-" + i + "-" + j);
-                    var updateTxt = updateP.textContent.match(/Update.*:/);
-                    updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
-
-                    // add link to text
-                    var linkP = document.getElementById(d.state + "-" + i + "-" + j);
-                    var currLinks = d.summaries[i].link.split("||");
-                    var currLinkTexts = d.summaries[i].link_text.split("||");
-
-                    for (var l = 0; l < currLinks.length; l++) {
-                        linkP.innerHTML = linkP.innerHTML.replace(currLinkTexts[l], "<a href='" + currLinks[l] + "' target='_blank'>" + currLinkTexts[l] + "</a>");
-                    };
-                };
-
-            // if there is no summary add the default text
-            } else {
-                currSum
-                    .append("p")
-                    .text(d.summaries[i].summary)
-                    .attr("id", d.state + "-" + i);
             };
 
-        
-        
+            // circle
+            currTimeline
+                .append("div")
+                .style("width", "20px")
+                .style("height", "20px")
+                .style("background-color", "#bebebe")
+                .style("border-radius", "50%")
+                .style("flex", "none");
+
+            // rectangle
+            var rect = currTimeline
+                .append("div")
+                .style("width", "3px")
+                .style("height", "100%")
+                .style("background-color", "#bebebe")
+                .style("margin-left", "auto")
+                .style("margin-right", "auto");
+
+            // summary
+            var currSum = ncrSum.append("div");
+            var sums = d.summaries[i].summary.split("||");
+
+            for (j = 0; j < sums.length; j++) {
+                currSum
+                    .append("p")
+                    .text(sums[j])
+                    .attr("id", d.state + "-" + i + "-" + j)
+                    .style("margin-top", 0);
+
+                // italicize update text
+                var updateP = document.getElementById(d.state + "-" + i + "-" + j);
+                var updateTxt = updateP.textContent.match(/Update.*:/);
+                updateP.innerHTML = updateP.innerHTML.replace(/Update.*:/, "<i>" + updateTxt + "</i>");
+
+                // add link to text
+                var linkP = document.getElementById(d.state + "-" + i + "-" + j);
+                var currLinks = d.summaries[i].link.split("||");
+                var currLinkTexts = d.summaries[i].link_text.split("||");
+
+                for (var l = 0; l < currLinks.length; l++) {
+                    linkP.innerHTML = linkP.innerHTML.replace(currLinkTexts[l], "<a href='" + currLinks[l] + "' target='_blank'>" + currLinkTexts[l] + "</a>");
+                };
+            };
+
     };
             
         document.getElementById("state-header").scrollIntoView({
