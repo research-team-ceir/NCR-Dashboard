@@ -230,6 +230,12 @@
 		"y": 33,
 		"summaries": [
 			{
+				"date": "10/08/2018",
+				"summary": "Approximately 1,500 individuals were incorrectly registered to vote between April 23 and September 25, 2018 due to a processing error at the department of motor vehicles. The individuals improperly registered includes noncitizens, but it is unclear how many. None of the 1,500 are undocumented immigrants.",
+				"link": "https://apnews.com/general-news-f5f245dbff474013a5f4bda673818138",
+				"link_text": "includes noncitizens"
+			},
+			{
 				"date": "12/10/2019",
 				"summary": "The U.S. Department of Justice sentenced an individual for voting as a noncitizen in multiple elections over 20 years. The individual fraudulently used the identity of a US citizen.",
 				"link": "https://www.justice.gov/usao-edca/pr/illegal-alien-residing-sacramento-sentenced-aggravated-identity-theft-passport-fraud",
@@ -261,7 +267,7 @@
 			},
 			{
 				"date": "08/28/2026",
-				"summary": "An individual was charged with registering to vote as a noncitizen in 2025 and falsely claiming citizenship on their voter registration application.",
+				"summary": "An individual was charged with allegedly registering to vote as a noncitizen in 2025 and falsely claiming citizenship on their voter registration application.",
 				"link": "https://www.justice.gov/usao-cdca/pr/honduran-national-living-san-fernando-valley-arrested-federal-criminal-complaint",
 				"link_text": "charged"
 			}
@@ -454,15 +460,15 @@
 			},
 			{
 				"date": "07/30/2026",
-				"summary": "A possible noncitizen was charged with voting in seven general elections between 2004 and 2024. The individual admitted to voting in the elections.",
+				"summary": "A possible noncitizen was charged with voting in seven general elections between 2004 and 2024 and false affirmation of citizenship. The individual admitted to voting in the elections.",
 				"link": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-charges-canadian-citizen-illegally-voting-multiple",
 				"link_text": "charged with"
 			},
 			{
 				"date": "08/13/2026",
-				"summary": "A noncitizen was sentenced for voting in several elections since registering in 2010.",
+				"summary": "A noncitizen was sentenced for making a false claim of citizenship in order to vote. The individual registered to vote in 2010 and voted in several elections.",
 				"link": "https://www.justice.gov/usao-mdfl/pr/colombian-citizen-sentenced-federal-prison-adopting-identity-us-citizen-obtain",
-				"link_text": "sentenced for voting"
+				"link_text": "sentenced for making a false claim of citizenship"
 			},
 			{
 				"date": "08/18/2026",
@@ -472,9 +478,9 @@
 			},
 			{
 				"date": "09/04/2026",
-				"summary": "A noncitizen was arrested for registering to vote and voting in the 2024 general election in Lee County. According to the Lee County Supervisor, more than 130 possible noncitizens have been removed from the county's voter list this year and over 30 of those individuals allegedly have a voting history. The 130 possible noncitizens may include other stories already captured in this tracker from 2026.",
+				"summary": "A noncitizen was charged with registering to vote and voting in the 2024 general election in Lee County. According to the Lee County Supervisor, more than 130 possible noncitizens have been removed from the county's voter list this year and over 30 of those individuals allegedly have a voting history. The 130 possible noncitizens may include other stories already captured in this tracker from 2026.",
 				"link": "https://flvoicenews.com/florida-authorities-arrest-mexican-non-citizen-for-illegally-voting-in-2024-election-state-election-officials-confirm/||https://www.news-press.com/story/news/politics/elections/2026/09/05/noncitizen-voted-in-fort-myers-now-faces-charges-in-presidential-race/91610479007/?gnt-cfr=1&gca-cat=p&gca-uir=true&gca-epti=z115124p117050n00----l001350c00----e111880v115124d--55--b--55--&gca-ft=16&gca-ds=sophi",
-				"link_text": "noncitizen was arrested||over 30"
+				"link_text": "noncitizen was charged||over 30"
 			}
 		],
 		"profile": "There are about 14.2 million active registered voters in Florida. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0127% of active registered voters.",
@@ -696,7 +702,7 @@
 				"date": "03/20/2025",
 				"summary": "Update to the 10/22/2024 entry: The secretary of state reduced the number of possible noncitizens identified as having voted or registered to vote from 2,176 to 277 after comparing state data with SAVE. Of the 277, 35 noncitizens voted in Iowa last year and another five noncitizens had their ballots rejected.",
 				"link": "https://sos.iowa.gov/news-resources/iowa-secretary-states-audit-voter-registration-lists-finds-277-confirmed-noncitizens||https://www.radioiowa.com/2025/06/25/charges-filed-in-six-cases-of-alleged-2024-iowa-election-fraud/",
-				"link_text": "reduced the number of possible noncitizens||voted in Iowa list year"
+				"link_text": "reduced the number of possible noncitizens||voted in Iowa last year"
 			},
 			{
 				"date": "08/08/2025",
@@ -720,7 +726,7 @@
 				"date": "03/29/2026",
 				"summary": "Update to the 9/18/2025 entry: Of 2,176 possible noncitizens on the state's voter list, the state attorney general charged six individuals with first-degree election misconduct. Two were acquitted, two were convicted, and two have pending charges. Of the convictions, one was given a deferred judgement and probation and the other was later ruled to be entitled to a new trial.",
 				"link": "https://www.thegazette.com/news/elections/state/only-1-guilty-verdict-thus-far-in-iowa-s-pursuit-of-noncitizens-voting/article_9a718e63-eecd-4f3b-bf3b-33e9095c8e39.html||https://www.desmoinesregister.com/story/news/crime-and-courts/2026/03/12/iowa-illegal-noncitizen-voting-trial-acquitted/89119274007/",
-				"link_text": "charged six individuals||of the convictions"
+				"link_text": "charged six individuals||Of the convictions"
 			},
 			{
 				"date": "08/18/2026",
@@ -789,7 +795,7 @@
 			},
 			{
 				"date": "09/14/2026",
-				"summary": "A federal grand jury indicted an individual for allegedly voting as a noncitizen in a federal election. The individual allegedly registered to vote in November 2024.",
+				"summary": "A federal grand jury indicted an individual for allegedly voting as a noncitizen in a federal election and false claim of citizenship in order to vote. The individual allegedly registered to vote in November 2024.",
 				"link": "https://www.justice.gov/opa/pr/six-charged-california-kansas-and-louisiana-illegally-voting-fraudulent-voter-registration",
 				"link_text": "indicted"
 			}
@@ -1305,7 +1311,7 @@
 				"date": "07/16/2026",
 				"summary": "The U.S. Department of Homeland Security (DHS) announced it had completed an unspecified review of voter lists in CA, NJ, NV, and PA. DHS claimed to identify tens of thousands of possible noncitizens in each of these states, but it did not provide the lists to state officials or provide any information on the review's methodology. None of the identified states had provided their voter list to DHS for review. Nevada election officials quickly rebutted DHS's data and methodology as a major overestimate, and Pennsylvania election officials reported that DHS officials said they do not have high confidence in the claimed numbers.",
 				"link": "https://www.nytimes.com/2026/07/16/us/politics/trump-again-makes-unfounded-claims-of-noncitizen-voting.html||https://www.cbsnews.com/news/trump-markwayne-mullin-non-citizens-registered-voters-california-new-jersey-nevada-pennsylvania/||https://www.nytimes.com/2026/07/16/us/politics/trump-again-makes-unfounded-claims-of-noncitizen-voting.html||https://www.npr.org/2026/08/25/nx-s1-5940807/noncitizen-voters-trump-nevada-call",
-				"link_text": "unspecified review|| review's methodology||rebutted||do not have high confidence "
+				"link_text": "unspecified review|| review's methodology||rebutted||do not have high confidence"
 			},
 			{
 				"date": "07/21/2026",
@@ -1358,13 +1364,13 @@
 				"date": "11/03/2011",
 				"summary": "Two noncitizens voluntarily requested to be removed from the voter list. One individual registered in 1998 and has voted in most elections since that year. The other individual did not have a voting history.",
 				"link": "https://nmpolitics.net/Documents/1103.SOStoKing.pdf?x45318",
-				"link_text": "office identified"
+				"link_text": "voluntarily requested"
 			},
 			{
 				"date": "11/16/2011",
 				"summary": "Update to the 3/15/2011 entry: After further review, the secretary of state determined that of the 117 possible noncitizens identified in March, at least 13 were matched in error or without sufficient information to confirm a match.||The state is still waiting on information from many individuals to confirm citizenship status. Some individuals were registered to vote after presenting foreign documentation at the Motor Vehicle Division and it is possible they had become naturalized citizens by the time they registered or voted. Most of the identified individuals do not have a voting history.",
 				"link": "https://nmpolitics.net/Documents/SOSVoterFileReport.pdf?x45318",
-				"link_text": "resulting in"
+				"link_text": "13 were matched"
 			},
 			{
 				"date": "08/18/2026",
@@ -1693,7 +1699,7 @@
 				"date": "12/12/2017",
 				"summary": "A Philadelphia city commissioner's office identified 220 noncitizens who allegedly registered to vote in Philadelphia between 2006 and 2017, 90 of whom allegedly voted in at least one election during that time period. Of the 220 noncitizen registrants, the office claimed that 168 had registered to vote or modified their voter registration through the Pennsylvania Department of Transportation.",
 				"link": "https://pasenategop.com/stategovernment/wp-content/uploads/2017/12/schmidt.pdf",
-				"link_text": "220 possible noncitizens"
+				"link_text": "220 noncitizens"
 			},
 			{
 				"date": "11/04/2024",
@@ -1716,8 +1722,8 @@
 			{
 				"date": "07/16/2026",
 				"summary": "The U.S. Department of Homeland Security (DHS) announced it had completed an unspecified review of voter lists in CA, NJ, NV, and PA. DHS claimed to identify tens of thousands of possible noncitizens in each of these states, but it did not provide the lists to state officials or provide any information on the review's methodology. None of the identified states had provided their voter list to DHS for review. Nevada election officials quickly rebutted DHS's data and methodology as a major overestimate, and Pennsylvania election officials reported that DHS officials said they do not have high confidence in the claimed numbers.",
-				"link": "https://www.nytimes.com/2026/07/16/us/politics/trump-again-makes-unfounded-claims-of-noncitizen-voting.html||https://www.cbsnews.com/news/trump-markwayne-mullin-non-citizens-registered-voters-california-new-jersey-nevada-pennsylvania/",
-				"link_text": "unspecified review|| review's methodology||rebutted||do not have high confidence "
+				"link": "https://www.nytimes.com/2026/07/16/us/politics/trump-again-makes-unfounded-claims-of-noncitizen-voting.html||https://www.cbsnews.com/news/trump-markwayne-mullin-non-citizens-registered-voters-california-new-jersey-nevada-pennsylvania/||https://www.nytimes.com/2026/07/16/us/politics/trump-again-makes-unfounded-claims-of-noncitizen-voting.html||https://www.npr.org/2026/08/25/nx-s1-5940807/noncitizen-voters-trump-nevada-call",
+				"link_text": "unspecified review||review's methodology||rebutted||do not have high confidence"
 			},
 			{
 				"date": "07/29/2026",
@@ -1751,7 +1757,7 @@
 			},
 			{
 				"date": "09/04/2026",
-				"summary": "A federal grand jury indicted an individual for allegedly voting as a noncitizen in the 2024 election.",
+				"summary": "A federal grand jury indicted an individual for allegedly voting as a noncitizen in the 2024 election, fraudulent registration, and making a false claim of citizenship in order to vote.",
 				"link": "https://www.justice.gov/usao-mdpa/pr/illegal-alien-mexico-charged-alien-voting",
 				"link_text": "indicted"
 			},
@@ -1988,7 +1994,7 @@
 				"date": "07/30/2026",
 				"summary": "Update to the 6/5/2025 entry: A noncitizen pleaded guilty to voting in the 2020 federal election and falsely claiming to be a US citizen when registering to vote. Records indicate that the person voted in five elections.",
 				"link": "https://www.justice.gov/usao-sdtx/pr/ada-ngozi-otuka-british-citizen-guilty-illegal-voting-us-elections||https://texasscorecard.com/federal/uk-citizen-pleads-guilty-to-illegal-voting-false-citizenship-claim-in-katy/",
-				"link_text": "pleaded guilty||illegally voting"
+				"link_text": "pleaded guilty||voting"
 			},
 			{
 				"date": "08/06/2026",
