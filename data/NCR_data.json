@@ -241,6 +241,12 @@
                 "summary": "Update to the 10/30/2025 entry: The secretary of state's office clarified that 37 of the possible noncitizens identified allegedly voted in a prior election. These individuals were referred to law enforcement for further investigation.",
                 "link": "https://arkadelphian.com/2026/10/02/noncitizen-voting-ban-on-the-ballot/",
                 "link_text": "allegedly voted"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "An individual was charged with allegedly voting as a noncitizen in the 2022 general election. The individual allegedly registered to vote in 2022.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 1.4 million active registered voters in Arkansas. Taken at face value, the largest claim documented (10/30/2025) would be roughly 0.0214% of active registered voters.",
@@ -303,15 +309,33 @@
             },
             {
                 "date": "10/13/2026",
-                "summary": "Update to the 7/16/2026 entry: The Department of Justice (DOJ) sent a list of 20,000 purported “likely noncitizens” to LA County election officials. Local officials suggested the list is “unreliable.”||Of the 20,000 names flagged, just 7,035 had addresses in LA County and some names on the list were duplicates.||LA County officials began a preliminary review of the list, examining a sample of 200 individuals with flagged records. A significant portion had records that indicated they were born in the US. Additionally, more than half of the records in the sample were already canceled or inactive. Roughly 70% percent of the sample did not have a prior voting history.||The acting deputy attorney general later acknowledged that the list may contain some errors. It remains unclear what methodology was used to match records to identify possible noncitizens. \r\n",
-                "link": "https://www.theguardian.com/us-news/2026/oct/19/california-illegal-voting-charges-doj||https://www.npr.org/2026/10/20/nx-s1-6009873/california-doj-voter-rolls-noncitizens||https://www.theguardian.com/us-news/2026/oct/20/doj-non-citizens-la\r\n",
-                "link_text": "sent a list||unreliable||unclear what methodology"
+                "summary": "Update to the 7/16/2026 entry: The Department of Justice (DOJ) sent a list of 20,000 purported “likely noncitizens” to LA County election officials. Local officials suggested the list is “unreliable.”||Of the 20,000 names flagged, just 7,035 had addresses in LA County and some names on the list were duplicates.||LA County officials began a preliminary review of the list, examining a sample of 200 individuals with flagged records. A significant portion had records that indicated they were born in the US. Additionally, more than half of the records in the sample were already canceled or inactive. Roughly 70% percent of the sample did not have a prior voting history.||The acting deputy attorney general later acknowledged that the list may contain some errors. It remains unclear what methodology was used to match records to identify possible noncitizens.||The other 56 counties also received similar letters purporting to flag possible noncitizens on their voter list. \r\n",
+                "link": "https://www.theguardian.com/us-news/2026/oct/19/california-illegal-voting-charges-doj||https://www.npr.org/2026/10/20/nx-s1-6009873/california-doj-voter-rolls-noncitizens||https://www.theguardian.com/us-news/2026/oct/20/doj-non-citizens-la||https://www.slocounty.ca.gov/departments/board-of-supervisors/district-2-supervisor-bruce-gibson/district-2-news/county-responds-to-doj-demand#docaccess-3be3a01496a889a069a64e8f56591cd7||https://www.nbcsandiego.com/news/local/doj-request-to-set-aside-alleged-noncitizen-ballots-rejected-by-san-diego-county/4094068/\r\n",
+                "link_text": "sent a list||unreliable||unclear what methodology||counties||letters"
             },
             {
                 "date": "10/19/2026",
                 "summary": "Update to the 10/13/2026 entry: The Department of Justice (DOJ) announced charges against 28 noncitizens who were on the list of 20,000 individuals sent to LA County officials the week prior. Of those charged, DOJ alleged that 21 had voted in a recent election. Some of those charged claimed they never registered to vote or registered but did not know it was illegal.",
                 "link": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes||https://www.theguardian.com/us-news/2026/oct/19/california-illegal-voting-charges-doj||https://www.latimes.com/california/story/2026-10-19/california-voter-fraud-charges-defendants-react",
                 "link_text": "announced charges||alleged||never registered"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Six individuals were charged with allegedly voting as noncitizens in the 2024 general election. One of the six was also charged with allegedly voting in the 2022 general election.",
+                "link": "https://www.justice.gov/usao-edca/pr/six-additional-aliens-charged-illegal-voting-counties-fresno-kings-sacramento-solano",
+                "link_text": "charged"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "The Department of Justice charged six individuals with lying on their naturalization applications, based on claims that they had improperly registered to vote.",
+                "link": "https://www.justice.gov/usao-cdca/pr/six-additional-foreign-nationals-la-county-who-registered-vote-and-voted-us-elections",
+                "link_text": "charged"
+            },
+            {
+                "date": "11/03/2026",
+                "summary": "An individual was charged with allegedly voting as a noncitizen in 2021, illegally registering to vote, and making a false claim of citizenship in order to vote.",
+                "link": "https://www.kcbx.org/government-and-politics/2026-11-03/slo-county-da-announces-voter-fraud-charges-right-before-election",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 22.6 million active registered voters in California. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.019% of active registered voters.",
@@ -630,6 +654,12 @@
                 "summary": "The U.S. Department of Justice announced charges against three individuals related to alleged noncitizen voting. One of the individuals allegedly voted in the 2024 general election. Another individual allegedly voted nine times between 2008 and 2024 and is also charged with making a false claim of citizenship to vote.",
                 "link": "https://www.justice.gov/opa/pr/department-justice-charges-16-individuals-illegal-voting-and-related-election-crimes",
                 "link_text": "charges against three individuals"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "An individual was charged with allegedly making a false claim of citizenship in order to vote in the 2024 general election. The individual allegedly registered using the identity of a US citizen.",
+                "link": "https://www.justice.gov/usao-ndga/pr/fourth-alien-arrested-north-georgia-voting-federal-elections",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 7.2 million active registered voters in Georgia. Taken at face value, the largest claim documented (07/16/2026) would be roughly 0.0354% of active registered voters.",
@@ -724,6 +754,12 @@
                 "summary": "A federal grand jury indicted an individual for allegedly voting as a noncitizen and making a false statement of citizenship in order to vote. The individual allegedly voted in May 2022 and November 2024.",
                 "link": "https://www.justice.gov/usao-id/pr/federal-grand-jury-indicts-illegal-alien-mexico-voter-fraud-false-statement-passport",
                 "link_text": "allegedly voting"
+            },
+            {
+                "date": "09/18/2026",
+                "summary": "A federal grand jury indicted an individual for allegedly falsely claiming US citizenship in order to vote and voting as a noncitizen in May 2022 and the 2024 general election.",
+                "link": "https://www.justice.gov/opa/pr/department-justice-charges-16-individuals-illegal-voting-and-related-election-crimes",
+                "link_text": "indicted"
             }
         ],
         "profile": "There are about 1.1 million active registered voters in Idaho. Taken at face value, the largest claim documented (02/09/2026) would be roughly 0.0691% of active registered voters.",
@@ -1100,6 +1136,12 @@
                 "summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 500 votes in Maryland may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0163% of ballots cast in the state.",
                 "link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
                 "link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+            },
+            {
+                "date": "10/27/2026",
+                "summary": "An individual was charged with allegedly voting as a noncitizen in the 2024 general election.",
+                "link": "https://www.justice.gov/usao-md/pr/bangladesh-illegal-alien-charged-unlawful-voting",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 4.3 million active registered voters in Maryland. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0116% of active registered voters.",
@@ -1311,6 +1353,12 @@
                 "summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 250 votes in Missouri may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0083% of ballots cast in the state.",
                 "link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
                 "link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+            },
+            {
+                "date": "10/30/2026",
+                "summary": "A federal grand jury indicted an individual for allegedly making a false claim of citizenship to register to vote. The individual allegedly registered in 2024 and voted in a general municipal election.",
+                "link": "https://www.justice.gov/usao-wdmo/pr/lawful-permanent-resident-canada-charged-falsely-claiming-be-united-states-citizen",
+                "link_text": "indicted"
             }
         ],
         "profile": "There are about 4 million active registered voters in Missouri. Taken at face value, the largest claim documented (07/16/2026) would be roughly 0.0278% of active registered voters.",
@@ -1421,6 +1469,12 @@
                 "date": "10/26/2026",
                 "summary": "An individual was charged with voting as a noncitizen in a federal election.",
                 "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-48-aliens-election-related-crimes",
+                "link_text": "charged"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Four individuals were charged with allegedly voting as noncitizens.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
                 "link_text": "charged"
             }
         ],
@@ -1552,6 +1606,12 @@
                 "summary": "An individual pleaded guilty to voting as a noncitizen in the 2024 general election.",
                 "link": "https://www.justice.gov/opa/pr/illegal-alien-admits-illegally-voting-federal-election-new-jersey",
                 "link_text": "pleaded guilty"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Two individuals were charged with allegedly voting as noncitizens. One individual allegedly voted in the 2022 general election and one individual allegedly voted in the 2024 general election.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 6.1 million active registered voters in New Jersey. Taken at face value, the largest claim documented (07/21/2026) would be roughly 0.1082% of active registered voters.",
@@ -1634,6 +1694,12 @@
                 "summary": "An individual was charged with allegedly voting as a noncitizen in a federal election. The individual was adopted and said she had believed for most of her life that she was a US citizen.",
                 "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-48-aliens-election-related-crimes||https://www.washingtonpost.com/immigration/2026/10/28/we-studied-180-voter-fraud-cases-many-charged-cite-honest-mistakes/",
                 "link_text": "charged||believed"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Two individuals were charged with allegedly voting as noncitizens in the 2024 general election.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 12.4 million active registered voters in New York. Taken at face value, the largest claim documented (08/24/2026) would be roughly 0.0848% of active registered voters.",
@@ -1711,6 +1777,12 @@
                 "summary": "A federal grand jury indicted ten individuals for allegedly falsely claiming citizenship to vote. Of those charged, nine were also charged with allegedly voting as noncitizens in various elections between 1998 and 2024. All nine allegedly voted in the 2024 general election.",
                 "link": "https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
                 "link_text": "indicted ten individuals"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Eighteen individuals were charged with allegedly voting as noncitizens. Sixteen of those individuals were also charged with allegedly falsely claiming citizenship to vote.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 7.1 million active registered voters in North Carolina. Taken at face value, the largest claim documented (07/16/2026) would be roughly 0.0225% of active registered voters.",
@@ -1852,6 +1924,12 @@
                 "summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 100 votes in Oklahoma may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0064% of ballots cast in the state.",
                 "link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
                 "link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "An individual was charged with allegedly voting in the 2022 general election and registering in March 2022.",
+                "link": "https://www.justice.gov/usao-ndok/pr/philippine-national-charged-voting-illegally-alien-federal-election",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 2.1 million active registered voters in Oklahoma. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0048% of active registered voters.",
@@ -1978,16 +2056,16 @@
                 "link_text": "five possible noncitizens"
             },
             {
-                "date": "07/30/2026",
-                "summary": "Following claims of noncitizen registration in Chester County based on information from juror records, the Pennsylvania Department of State clarified that juror records lack enough information to accurately match against voter records and are not fit for comparison to the voter list. The Chester County commissioner plans to further investigate the claims.||Early Vote Action said it had identified 250 possible noncitizen registrants in Chester County after comparing the list of disqualified jurors who disclosed noncitizenship to the county’s voter list. The group claims that the possible noncitizens were registered between 2021 and June 2026 and that some have a voting history. ",
-                "link": "https://www.wesanews.org/politics-government/2026-08-03/activists-non-juror-list-voter-registration||https://broadandliberty.com/2026/07/30/felice-fein-non-citizens-on-voter-rolls/||",
-                "link_text": "not fit for comparison||identified 250"
-            },
-            {
                 "date": "08/11/2026",
                 "summary": "The Allegheny County Elections Division Manager stated there may have been three possible noncitizen registrants in 2026 and one in 2025 in the county. These cases have not been confirmed and the process by which these individuals were identified is unclear.",
                 "link": "https://triblive.com/news/politics-election/conservative-group-targets-allegheny-co-juror-records-in-search-of-possible-voter-fraud/",
                 "link_text": "three possible noncitizen registrants"
+            },
+            {
+                "date": "08/11/2026",
+                "summary": "The Chester County Republican Committee (RCCC) compared the list of disqualified jurors against voter databases from 2021 to 2026. In August 2026, the RCCC claimed to identify over 180 possible noncitizens through this method. The RCCC said the individuals they identified had similar names to individuals who were excused from jury duty due to indicating they were noncitizens. ||The Pennsylvania Department of State has said that nonjuror lists are not useful for verifying voter list accuracy.",
+                "link": "https://www.facebook.com/100064828562402/posts/1600049628832641/?mibextid=wwXIfr&rdid=4oB477olg1Xh5x9X#||https://www.wesanews.org/politics-government/2026-08-03/activists-non-juror-list-voter-registration",
+                "link_text": "claimed||not useful"
             },
             {
                 "date": "08/18/2026",
@@ -2030,6 +2108,12 @@
                 "summary": "Nine individuals were charged with allegedly voting as noncitizens in either the 2022 general election, 2024 general election, or both.",
                 "link": "https://www.justice.gov/usao-edpa/pr/nine-pennsylvania-non-citizens-charged-illegally-voting",
                 "link_text": "charged"
+            },
+            {
+                "date": "10/29/2026",
+                "summary": "Update to the 8/11/2026 entry: Votebeat and Spotlight PA recreated the RCCC's process and then used the state's mail ballot request list and public records databases to identify email addresses for two-thirds of the possible noncitizen voters. Thirteen of the individuals they obtained contact information for responded to the newsrooms' questions via email--all 13 were citizens. Twelve of them were naturalized and registered after becoming citizens, and one was born in the United States.",
+                "link": "https://www.spotlightpa.org/news/2026/10/nonjuror-noncitizen-voter-roll-comparison-chester-county-elections/",
+                "link_text": "all 13 were citizens"
             }
         ],
         "profile": "There are about 8.4 million active registered voters in Pennsylvania. Taken at face value, the largest claim documented (10/25/2017) would be roughly 0.0138% of active registered voters.",
@@ -2140,6 +2224,12 @@
                 "summary": "The U.S. Census Bureau released an unsigned \"beginning analysis\" claiming to identify possible noncitizen voters during the 2020 election using commercial data and USCIS records. Prior Census studies indicate the results of this methodology may be entirely explained by known errors in the data matching process. The Census Bureau did not provide any records to states for further review. This analysis claimed roughly 200 votes in Tennessee may have been cast by noncitizens in the 2020 general election. If confirmed, this would be roughly 0.0065% of ballots cast in the state.",
                 "link": "https://www.census.gov/content/dam/Census/library/publications/2026/dir/noncitizen-voting-in-the-2020-election.pdf||https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting||https://electionlawblog.org/2026/president-misuses-flawed-study-to-falsely-claim-noncitizen-voting/||https://mdi.georgetown.edu/response-to-voter-record-analysis/||https://playingwithelectiondata.substack.com/p/census-bureau-report-creates-confusion",
                 "link_text": "beginning analysis||entirely explained||known errors||data matching||process"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Seven possible noncitizens were charged with allegedly voting in 2024.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 4.5 million active registered voters in Tennessee. Taken at face value, the largest claim documented (07/16/2026) would be roughly 0.0224% of active registered voters.",
@@ -2313,6 +2403,12 @@
                 "summary": "Update to the 9/18/2026 entry: A federal jury convicted a noncitizen for voting in the 2024 general election and making a false claim to citizenship.",
                 "link": "https://www.justice.gov/usao-ndtx/pr/federal-jury-finds-indian-national-guilty-unlawfully-voting-2024-presidential-election",
                 "link_text": "convicted"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Four individuals were charged with allegedly voting as noncitizens. DOJ also charged an individual with lying on naturalization forms, based on claims that they had allegedly voted.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 16.6 million active registered voters in Texas. Taken at face value, the largest claim documented (12/31/2021) would be roughly 0.0707% of active registered voters.",
@@ -2366,6 +2462,12 @@
                 "summary": "Update to the 5/27/2026 entry: The list of 5,007 individuals flagged by the lieutenant governor's office was updated to at least 6,191 registered voters who need to provide proof of citizenship. Of the 6,191 individuals, 1,827 confirmed their citizenship, 57 requested removal, and 4,307 have not yet responded and their records remain unconfirmed.",
                 "link": "https://utahnewsdispatch.com/2026/10/15/utah-voters-need-to-prove-citizenship-under-new-law-fewer-than-2000-responded/",
                 "link_text": "6,191 registered voters"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "An individual was charged with allegedly voting as a noncitizen in the 2024 general election.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 1.8 million active registered voters in Utah. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0056% of active registered voters.",
@@ -2577,6 +2679,12 @@
                 "summary": "A federal grand jury indicted a possible noncitizen for allegedly falsely claiming to be a US citizen when registering to vote and voting. The individual allegedly registered to vote in July 2022 and voted in the 2022 general election.",
                 "link": "https://www.justice.gov/usao-wdwi/pr/indictment-unsealed-charging-colombian-citizen-illegally-registering-vote-and-voting||https://www.justice.gov/opa/pr/department-justice-charges-16-individuals-illegal-voting-and-related-election-crimes",
                 "link_text": "indicted||allegedly falsely claiming"
+            },
+            {
+                "date": "11/02/2026",
+                "summary": "Two individuals were charged with allegedly voting as noncitizens. One of the individuals was also charged with allegedly falsely claiming citizenship when registering to vote. Both individuals allegedly voted in the 2024 general election and one also allegedly voted in the 2022 general election.",
+                "link": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-63-individuals-election-related-crimes",
+                "link_text": "charged"
             }
         ],
         "profile": "There are about 3.9 million active registered voters in Wisconsin. Taken at face value, the largest claim documented (08/18/2026) would be roughly 0.0128% of active registered voters.",
